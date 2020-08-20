@@ -5,9 +5,11 @@
 3. キーファイルを本フォルダ内のgoogle.json内にコピーする
 4. 下記のコマンドでbuild
 
+
     docker build -t googlestorage .
 
 5. 下記のコマンドで起動
+
 
     docker run --rm --device /dev/Fuse --cap-add SYS_ADMIN -e BUCKET={{バケット名}} --name googlestorage -itd googlestorage 
 
